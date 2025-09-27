@@ -1,0 +1,578 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Digital Tasbih",
+  "@appTitle": {
+    "description": "The application title"
+  },
+
+  "appSubtitle": "Islamic Prayer Counter",
+  "@appSubtitle": {
+    "description": "The application subtitle"
+  },
+
+  "count": "Count",
+  "@count": {
+    "description": "Label for the current count"
+  },
+
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button label"
+  },
+
+  "resetConfirmTitle": "Reset Counter",
+  "@resetConfirmTitle": {
+    "description": "Title for reset confirmation dialog"
+  },
+
+  "resetConfirmMessage": "Do you want to reset the counter to zero?",
+  "@resetConfirmMessage": {
+    "description": "Message for reset confirmation dialog"
+  },
+
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button label"
+  },
+
+  "selectDhikr": "Select Dhikr",
+  "@selectDhikr": {
+    "description": "Button text to select dhikr type"
+  },
+
+  "changeDhikrType": "Change Dhikr Type",
+  "@changeDhikrType": {
+    "description": "Button text to change dhikr type"
+  },
+
+  "target": "Target",
+  "@target": {
+    "description": "Label for target count"
+  },
+
+  "targetReached": "✓ Target Completed",
+  "@targetReached": {
+    "description": "Message when target is reached"
+  },
+
+  "classicalTasbih": "Classical Tasbih",
+  "@classicalTasbih": {
+    "description": "Classical Tasbih category title"
+  },
+
+  "classicalTasbihDesc": "Traditional tasbih after prayers",
+  "@classicalTasbihDesc": {
+    "description": "Classical Tasbih category description"
+  },
+
+  "morningAdhkar": "Morning Adhkar",
+  "@morningAdhkar": {
+    "description": "Morning Adhkar category title"
+  },
+
+  "morningAdhkarDesc": "Recommended morning remembrances",
+  "@morningAdhkarDesc": {
+    "description": "Morning Adhkar category description"
+  },
+
+  "eveningAdhkar": "Evening Adhkar",
+  "@eveningAdhkar": {
+    "description": "Evening Adhkar category title"
+  },
+
+  "eveningAdhkarDesc": "Recommended evening remembrances",
+  "@eveningAdhkarDesc": {
+    "description": "Evening Adhkar category description"
+  },
+
+  "generalDhikr": "General Dhikr",
+  "@generalDhikr": {
+    "description": "General Dhikr category title"
+  },
+
+  "generalDhikrDesc": "Remembrances for any time",
+  "@generalDhikrDesc": {
+    "description": "General Dhikr category description"
+  },
+
+  "afterPrayerAdhkar": "After Prayer Adhkar",
+  "@afterPrayerAdhkar": {
+    "description": "After Prayer Adhkar category title"
+  },
+
+  "afterPrayerAdhkarDesc": "Recommended remembrances after finishing prayer",
+  "@afterPrayerAdhkarDesc": {
+    "description": "After Prayer Adhkar category description"
+  },
+
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings page title"
+  },
+
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme setting label"
+  },
+
+  "lightTheme": "Light",
+  "@lightTheme": {
+    "description": "Light theme option"
+  },
+
+  "darkTheme": "Dark",
+  "@darkTheme": {
+    "description": "Dark theme option"
+  },
+
+  "systemTheme": "System",
+  "@systemTheme": {
+    "description": "System theme option"
+  },
+
+  "vibration": "Vibration",
+  "@vibration": {
+    "description": "Vibration setting label"
+  },
+
+  "fontSize": "Font Size",
+  "@fontSize": {
+    "description": "Font size setting label"
+  },
+
+  "small": "Small",
+  "@small": {
+    "description": "Small size option"
+  },
+
+  "medium": "Medium",
+  "@medium": {
+    "description": "Medium size option"
+  },
+
+  "large": "Large",
+  "@large": {
+    "description": "Large size option"
+  },
+
+  "extraLarge": "Extra Large",
+  "@extraLarge": {
+    "description": "Extra large size option"
+  },
+
+  "statistics": "Statistics",
+  "@statistics": {
+    "description": "Statistics screen title"
+  },
+
+  "customDhikr": "Custom Dhikr",
+  "@customDhikr": {
+    "description": "Custom dhikr creation"
+  },
+
+  "advancedFeatures": "Advanced Features",
+  "@advancedFeatures": {
+    "description": "Advanced features screen title"
+  },
+
+  "goals": "Goals",
+  "@goals": {
+    "description": "Goals and achievements"
+  },
+
+  "achievements": "Achievements",
+  "@achievements": {
+    "description": "User achievements"
+  },
+
+  "backup": "Backup",
+  "@backup": {
+    "description": "Backup and restore"
+  },
+
+  "restore": "Restore",
+  "@restore": {
+    "description": "Restore data"
+  },
+
+  "socialSharing": "Social Sharing",
+  "@socialSharing": {
+    "description": "Share progress socially"
+  },
+
+  "shareProgress": "Share Progress",
+  "@shareProgress": {
+    "description": "Share dhikr progress"
+  },
+
+  "exportData": "Export Data",
+  "@exportData": {
+    "description": "Export user data"
+  },
+
+  "smartSuggestions": "Smart Suggestions",
+  "@smartSuggestions": {
+    "description": "AI-powered recommendations"
+  },
+
+  "progressAnimations": "Progress Animations",
+  "@progressAnimations": {
+    "description": "Enhanced visual feedback"
+  },
+
+  "motivationLevel": "Motivation Level",
+  "@motivationLevel": {
+    "description": "User motivation setting"
+  },
+
+  "targetCompleted": "Target Completed!",
+  "@targetCompleted": {
+    "description": "Achievement message"
+  },
+
+  "congratulations": "Congratulations! You have reached your dhikr target.",
+  "@congratulations": {
+    "description": "Completion congratulations"
+  },
+
+  "continueAction": "Continue",
+  "@continueAction": {
+    "description": "Continue button"
+  },
+
+  "startNewSession": "Start New Session",
+  "@startNewSession": {
+    "description": "Begin new dhikr session"
+  },
+
+  "completionRate": "Completion Rate",
+  "@completionRate": {
+    "description": "Percentage of completed sessions"
+  },
+
+  "totalSessions": "Total Sessions",
+  "@totalSessions": {
+    "description": "Number of dhikr sessions"
+  },
+
+  "thisWeek": "This Week",
+  "@thisWeek": {
+    "description": "Current week stats"
+  },
+
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "Current month stats"
+  },
+
+  "createBackup": "Create Backup",
+  "@createBackup": {
+    "description": "Create data backup"
+  },
+
+  "insights": "Insights",
+  "@insights": {
+    "description": "Smart insights"
+  },
+
+  "weeklyReport": "Weekly Report",
+  "@weeklyReport": {
+    "description": "Weekly progress report"
+  },
+
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+
+  "onboardingTitle1": "Digital Tasbih Counter",
+  "@onboardingTitle1": {
+    "description": "First onboarding screen title"
+  },
+
+  "onboardingDesc1": "Keep track of your dhikr and prayers with our beautiful digital counter",
+  "@onboardingDesc1": {
+    "description": "First onboarding screen description"
+  },
+
+  "onboardingTitle2": "Customizable Experience",
+  "@onboardingTitle2": {
+    "description": "Second onboarding screen title"
+  },
+
+  "onboardingDesc2": "Choose from various dhikr types, set targets, and personalize your spiritual journey",
+  "@onboardingDesc2": {
+    "description": "Second onboarding screen description"
+  },
+
+  "onboardingTitle3": "Track Your Progress",
+  "@onboardingTitle3": {
+    "description": "Third onboarding screen title"
+  },
+
+  "onboardingDesc3": "View detailed statistics, achieve goals, and maintain consistency in your worship",
+  "@onboardingDesc3": {
+    "description": "Third onboarding screen description"
+  },
+
+  "next": "Next",
+  "@next": {
+    "description": "Next button"
+  },
+
+  "skip": "Skip",
+  "@skip": {
+    "description": "Skip button"
+  },
+
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Get started button"
+  },
+
+  "shortcutSubhanAllah": "SubhanAllah",
+  "@shortcutSubhanAllah": {
+    "description": "App shortcut for SubhanAllah dhikr"
+  },
+
+  "shortcutAlhamdulillah": "Alhamdulillah",
+  "@shortcutAlhamdulillah": {
+    "description": "App shortcut for Alhamdulillah dhikr"
+  },
+
+  "shortcutAllahuAkbar": "Allahu Akbar",
+  "@shortcutAllahuAkbar": {
+    "description": "App shortcut for Allahu Akbar dhikr"
+  },
+
+  "shortcutLaIlahaIllallah": "La ilaha illallah",
+  "@shortcutLaIlahaIllallah": {
+    "description": "App shortcut for La ilaha illallah dhikr"
+  },
+
+  "quickIncrement": "Quick Count",
+  "@quickIncrement": {
+    "description": "Quick increment button"
+  },
+
+  "quickSettings": "Quick Settings",
+  "@quickSettings": {
+    "description": "Quick settings panel title"
+  },
+
+  "quickCounter": "Quick Counter",
+  "@quickCounter": {
+    "description": "Quick counter notification toggle"
+  },
+
+  "enableQuickCounter": "Enable Notification Counter",
+  "@enableQuickCounter": {
+    "description": "Enable quick counter in notifications"
+  },
+
+  "quickCounterDescription": "Show a persistent notification with counter buttons",
+  "@quickCounterDescription": {
+    "description": "Description for quick counter feature"
+  },
+
+  "todaysProgress": "Today's Progress",
+  "@todaysProgress": {
+    "description": "Today's dhikr progress section title"
+  },
+
+  "overallStatistics": "Overall Statistics",
+  "@overallStatistics": {
+    "description": "Overall statistics section title"
+  },
+
+  "completionRate": "Completion Rate",
+  "@completionRate": {
+    "description": "Completion rate section title"
+  },
+
+  "dhikrBreakdown": "Dhikr Breakdown",
+  "@dhikrBreakdown": {
+    "description": "Dhikr breakdown section title"
+  },
+
+  "recentSessions": "Recent Sessions",
+  "@recentSessions": {
+    "description": "Recent sessions section title"
+  },
+
+  "sessions": "Sessions",
+  "@sessions": {
+    "description": "Sessions label"
+  },
+
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed sessions label"
+  },
+
+  "totalCount": "Total Count",
+  "@totalCount": {
+    "description": "Total count label"
+  },
+
+  "totalTime": "Total Time",
+  "@totalTime": {
+    "description": "Total time spent label"
+  },
+
+  "averageSession": "Average Session",
+  "@averageSession": {
+    "description": "Average session duration"
+  },
+
+  "longestStreak": "Longest Streak",
+  "@longestStreak": {
+    "description": "Longest consecutive days streak"
+  },
+
+  "currentStreak": "Current Streak",
+  "@currentStreak": {
+    "description": "Current consecutive days streak"
+  },
+
+  "bestDay": "Best Day",
+  "@bestDay": {
+    "description": "Day with most dhikr activity"
+  },
+
+  "insights": "Insights",
+  "@insights": {
+    "description": "Insights section title"
+  },
+
+  "achievements": "Achievements",
+  "@achievements": {
+    "description": "Achievements section title"
+  },
+
+  "export": "Export",
+  "@export": {
+    "description": "Export data button"
+  },
+
+  "share": "Share",
+  "@share": {
+    "description": "Share statistics button"
+  },
+
+  "daily": "Daily",
+  "@daily": {
+    "description": "Daily filter option"
+  },
+
+  "weekly": "Weekly",
+  "@weekly": {
+    "description": "Weekly filter option"
+  },
+
+  "monthly": "Monthly",
+  "@monthly": {
+    "description": "Monthly filter option"
+  },
+
+  "yearly": "Yearly",
+  "@yearly": {
+    "description": "Yearly filter option"
+  },
+
+  "noDataAvailable": "No data available",
+  "@noDataAvailable": {
+    "description": "Message when no statistics data is available"
+  },
+
+  "startPracticingMessage": "Start practicing dhikr to see your statistics here",
+  "@startPracticingMessage": {
+    "description": "Encouragement message for new users"
+  },
+
+  "days": "days",
+  "@days": {
+    "description": "Days unit label"
+  },
+
+  "hours": "hours",
+  "@hours": {
+    "description": "Hours unit label"
+  },
+
+  "minutes": "minutes",
+  "@minutes": {
+    "description": "Minutes unit label"
+  },
+
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "Yesterday label"
+  },
+
+  "today": "Today",
+  "@today": {
+    "description": "Today label"
+  },
+
+  "last7Days": "Last 7 Days",
+  "@last7Days": {
+    "description": "Last 7 days filter"
+  },
+
+  "last30Days": "Last 30 Days",
+  "@last30Days": {
+    "description": "Last 30 days filter"
+  },
+
+  "consistencyScore": "Consistency Score",
+  "@consistencyScore": {
+    "description": "Consistency score metric"
+  },
+
+  "averagePerDay": "Average per Day",
+  "@averagePerDay": {
+    "description": "Average sessions per day"
+  },
+
+  "mostActiveHour": "Most Active Hour",
+  "@mostActiveHour": {
+    "description": "Hour of day with most activity"
+  },
+
+  "favoriteCategory": "Favorite Category",
+  "@favoriteCategory": {
+    "description": "Most used dhikr category"
+  },
+
+  "progressTrend": "Progress Trend",
+  "@progressTrend": {
+    "description": "Progress trend over time"
+  },
+
+  "improving": "Improving",
+  "@improving": {
+    "description": "Improving trend"
+  },
+
+  "declining": "Declining",
+  "@declining": {
+    "description": "Declining trend"
+  },
+
+  "stable": "Stable",
+  "@stable": {
+    "description": "Stable trend"
+  }
+}

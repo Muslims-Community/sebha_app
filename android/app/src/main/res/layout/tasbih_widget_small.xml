@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/widget_background_small"
+    android:gravity="center">
+
+    <!-- Current Count (Large) -->
+    <TextView
+        android:id="@+id/current_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Increment Button -->
+    <ImageButton
+        android:id="@+id/increment_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/widget_button_background_small"
+        android:contentDescription="تسبيح"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

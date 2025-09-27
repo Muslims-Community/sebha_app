@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Dhikr Name -->
+    <TextView
+        android:id="@+id/dhikr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="سبحان الله"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Current Count -->
+    <TextView
+        android:id="@+id/current_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Target Progress -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هدف: "
+            android:textSize="12sp"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/target_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="33"
+            android:textSize="12sp"
+            android:textColor="#CCFFFFFF" />
+
+        <TextView
+            android:id="@+id/target_reached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✓ مكتمل"
+            android:textSize="12sp"
+            android:textColor="#4CAF50"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Increment Button -->
+    <Button
+        android:id="@+id/increment_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="تسبيح"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/widget_button_background"
+        android:elevation="2dp" />
+
+</LinearLayout>
