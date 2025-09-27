@@ -562,11 +562,6 @@ class _DhikrCountingScreenState extends ConsumerState<DhikrCountingScreen>
 
                   const SizedBox(height: 30),
 
-                  // Counter circle with animation
-                  _buildCounterCircle(),
-
-                  const SizedBox(height: 30),
-
                   // Navigation controls
                   _buildNavigationControls(),
 
@@ -577,86 +572,9 @@ class _DhikrCountingScreenState extends ConsumerState<DhikrCountingScreen>
           ),
         ],
       ),
-      bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 
-  Widget _buildBottomNavigationBar() {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.1),
-            blurRadius: 8,
-            offset: const Offset(0, -2),
-          ),
-        ],
-      ),
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _buildNavBarItem(
-                icon: Icons.home,
-                label: 'الرئيسية',
-                onTap: () => Navigator.of(context).popUntil((route) => route.isFirst),
-              ),
-              _buildNavBarItem(
-                icon: Icons.analytics,
-                label: 'الإحصائيات',
-                onTap: () => Navigator.pushNamed(context, '/statistics'),
-              ),
-              _buildNavBarItem(
-                icon: Icons.track_changes,
-                label: 'الأهداف',
-                onTap: () => Navigator.pushNamed(context, '/goals'),
-              ),
-              _buildNavBarItem(
-                icon: Icons.settings,
-                label: 'الإعدادات',
-                onTap: () => Navigator.pushNamed(context, '/settings'),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildNavBarItem({
-    required IconData icon,
-    required String label,
-    required VoidCallback onTap,
-  }) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              icon,
-              color: Theme.of(context).primaryColor,
-              size: 24,
-            ),
-            const SizedBox(height: 4),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                color: Theme.of(context).primaryColor,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 
   Widget _buildCategoryProgressCard() {
     final completedDhikrs = _currentDhikrIndex + (_count >= _currentDhikr.targetCount ? 1 : 0);
@@ -725,7 +643,14 @@ class _DhikrCountingScreenState extends ConsumerState<DhikrCountingScreen>
       builder: (context, child) {
         return Transform.scale(
           scale: 1.0 + (_celebrationAnimation.value * 0.1),
-          child: Container(
+          child: GestureDetector(
+            onTap: _incrementCounter,
+            child: AnimatedBuilder(
+              animation: _countAnimation,
+              builder: (context, child) {
+                return Transform.scale(
+                  scale: _countAnimation.value,
+                  child: Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: Theme.of(context).cardColor,
@@ -859,7 +784,24 @@ class _DhikrCountingScreenState extends ConsumerState<DhikrCountingScreen>
                   ),
                   minHeight: 6,
                 ),
+                const SizedBox(height: 8),
+                Center(
+                  child: Text(
+                    _count >= _currentDhikr.targetCount ? 'مكتمل ✓' : 'انقر على البطاقة للعد',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: _count >= _currentDhikr.targetCount
+                        ? Colors.green
+                        : Theme.of(context).textTheme.bodySmall?.color?.withValues(alpha: 0.7),
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
               ],
+            ),
+                  ),
+                );
+              },
             ),
           ),
         );
@@ -867,68 +809,6 @@ class _DhikrCountingScreenState extends ConsumerState<DhikrCountingScreen>
     );
   }
 
-  Widget _buildCounterCircle() {
-    return AnimatedBuilder(
-      animation: _countAnimation,
-      builder: (context, child) {
-        return Transform.scale(
-          scale: _countAnimation.value,
-          child: GestureDetector(
-            onTap: _incrementCounter,
-            child: Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: _count >= _currentDhikr.targetCount
-                    ? Colors.green
-                    : Theme.of(context).primaryColor,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: (_count >= _currentDhikr.targetCount
-                        ? Colors.green
-                        : Theme.of(context).primaryColor).withValues(alpha: 0.4),
-                    spreadRadius: 5,
-                    blurRadius: 15,
-                    offset: const Offset(0, 5),
-                  ),
-                ],
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    '$_count',
-                    style: const TextStyle(
-                      fontSize: 48,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  if (_count >= _currentDhikr.targetCount)
-                    const Icon(
-                      Icons.check_circle,
-                      color: Colors.white,
-                      size: 24,
-                    )
-                  else
-                    const Text(
-                      'انقر للعد',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white70,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                ],
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
 
   Widget _buildNavigationControls() {
     return Row(
